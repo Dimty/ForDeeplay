@@ -70,12 +70,7 @@ namespace ForDeeplay
                     #endregion
                     #region Update
                     case "Update":
-                        //for (int i = 1; i < dataGridView1.Columns.Count-1; i++)
-                        //{
-                        //    var t = dataGridView1[i,e.RowIndex].Value;
-                        //    var x = dataSet.Tables["Table"].Rows[e.RowIndex][i];
-                        //    dataSet.Tables["Table"].Rows[e.RowIndex][i]= t;
-                        //}
+                        
                         sqladapter.Update(dataSet, "Table");
 
                         dataGridView1[6, e.RowIndex].Value="Delete";
